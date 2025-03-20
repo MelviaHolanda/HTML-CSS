@@ -1,116 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-
 <head>
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos.css">
     <title>XMotos</title>
-
-
 </head>
-
 
 <body>
 
-
-    <!--Cobeçalho da Página-->
-
-
+    <!-- Cabeçalho -->
     <header>
-
-
         <div class="Cabeçalho">
-
-
             <div id="Logo">
                 <img src="img/NovaLogo.png" alt="Logo XMotos" id="XmotosLogo">
             </div>
 
-
-
-
             <div id="menu">
-
-
                 <li>
-                    <a id="home" href="#XmotosLogo">HOME</a>
-                    <a id="pecas" href="pecas">PEÇAS</a>
-                    <a id="servicos" href="servicos">SERVIÇOS</a>
-                    <a id="contato" href="contato">CONTATOS</a>
+                    <a id="home" href="#">HOME</a>
+                    <a id="pecas" href="#">PEÇAS</a>
+                    <a id="servicos" href="#">SERVIÇOS</a>
+                    <a id="contato" href="#">CONTATO</a>
                 </li>
             </div>
-
 
             <button id="entrar">Entrar</button>
             <button id="cadastrar">Cadastrar</button>
         </div>
-
-
     </header>
-    <hr>
-    <!--Quem nos somos-->
-    <article>
 
+   <div class="slider">
 
-        <section>
+        <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--FIM Radio Buttons-->
 
-
-            <div>
-                <img src="img/LS2.jpg" alt="LS2" id="imagem1">
+            <!--Slide Images-->
+            <div class="slide first">
+                <img src="img/LS2.jpg" alt="LS2">
             </div>
-
-
-        </section>
-
-
-    </article>
-
-
-    <!--Produtos-->
-
-
-    <article>
-
-
-        <section>
-
-
-            <div>
-
-
+            <div class="slide">
+                <img src="img/NORISK.jpg" alt="NORISK">
             </div>
+            <div class="slide">
+                <img src="img/PinhaoECoroa.jpg" alt="PinhaoECoroa" id="PinhaoECoroa">
+            </div>
+            <div class="slide">
+                <img src="img/BMSfilters.jpg" alt="BMSfilters" id="BMSfilters">
+            </div>
+            <!--FIM Slide Images-->
+
+            <!--Navigation Auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2"class="manual-btn"></label>
+            <label for="radio3"class="manual-btn"></label>
+            <label for="radio4"class="manual-btn"></label>
+        </div>
 
 
-        </section>
+   </div>
 
+    
 
-    </article>
-
-
-    <!--Contatos e Redes Sociais-->
+    <!-- Rodapé -->
     <footer>
         <div id="rodape">
-            
-                <img src="img/NovaLogo.png" alt="XMotos" id="logo_xmotos">
-            
+            <img src="img/NovaLogo.png" alt="XMotos" id="logo_xmotos">
             <div id="redes_sociais">
                 <h3>Redes Sociais:</h3>
                 <div class="icones_redes">
-                    <img src="img/Instagram .jpg" alt="Instagram">
-                    <img src="img/Whatsapp .jpg" alt="WhatsApp">
-                    <img src="img/YouTube .jpg" alt="YouTube">
-                    <img src="img/Facebook.jpg" alt="Facebook">
+                    <img src="img/Instagram_.png" alt="Instagram">
+                    <img src="img/Whatsapp.png" alt="WhatsApp">
+                    <img src="img/YouTube_.png" alt="YouTube">
+                    <img src="img/Facebook-.png" alt="Facebook">
                 </div>
             </div>
         </div>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
-
 
 </html>
