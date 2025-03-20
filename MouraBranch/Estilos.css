@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(75, 74, 74);
+    
 }
 
 /*CABEÇALHO*/
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-   
+    background-color: rgb(75, 74, 74);
 }
 
 
