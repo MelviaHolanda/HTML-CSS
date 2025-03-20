@@ -1,127 +1,151 @@
-*{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
 }
 
-/*CABEÇALHO*/
-
-.Cabeçalho{
+/* Cabeçalho */
+.Cabeçalho {
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
+    padding: 30px 0;
     background-color: rgb(75, 74, 74);
 }
 
-
-#XmotosLogo{
+#XmotosLogo {
     width: 200px;
-    height: 100px;
-    margin-bottom: 20px;
-   
+    height: auto;
 }
 
-
-#menu{
+/* Menu */
+#menu {
     padding-top: 25px;
-    list-style-type: none;
+    list-style: none;
 }
 
-
-#home{
-    padding-right: 70px;
+#menu a {
+    margin-right: 50px;
     text-decoration: none;
-
-}
-
-
-#pecas{
-    padding-right: 70px;
-    text-decoration: none;
-}
-
-
-#contato{
-    padding-right: 70px;
-    text-decoration: none;
-}
-
-
-#servicos{
-    text-decoration: none;
-    padding-right: 100px;
-}
-
-
-#entrar{
-    background-color: rgb(199, 79, 79);
-    border-radius:6px ;
     color: white;
-    height: 50px;
+    font-weight: bold;
 }
 
+/* Botões */
+#entrar, #cadastrar {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+}
 
-#cadastrar{
+#entrar {
+    background-color: rgb(199, 79, 79);
+    color: white;
+    border: none;
+}
+
+#cadastrar {
     background-color: white;
-    border-radius:6px ;
-    color:rgb(199, 79, 79);
-    height: 50px;
+    color: rgb(199, 79, 79);
+    border: 2px solid rgb(199, 79, 79);
 }
 
-
-#imagem1{
+/* 🎡 Carrossel */
+.slider {
+    position: relative;
     width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/*FOOTHER*/
+/* Ocultando os radio buttons */
+input[type="radio"] {
+    display: none;
+}
 
+/* Área de slides */
+.sliders {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: margin-left 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Navegação manual */
+.manual-navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+/* Animação ao clicar nos botões */
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+
+/* Rodapé */
 #rodape {
     background-color: rgb(33, 6, 6);
-    font-size: x-large;
+    color: white;
     padding: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; 
-}
-
-#logo_xmotos {
-    max-width: 350px; /* Ajusta o tamanho da logo */
+    flex-wrap: wrap;
 }
 
 #redes_sociais {
     display: flex;
     align-items: center;
-    gap: 30px; /* Espaço entre os elementos */
-    color: white;
-    flex-direction: row;
+    gap: 20px;
 }
 
 .icones_redes {
     display: flex;
-    justify-content: center;
-    gap: 15px; /* Espaçamento entre os ícones */
-    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .icones_redes img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     transition: transform 0.3s ease-in-out;
 }
 
 .icones_redes img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
-
