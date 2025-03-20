@@ -31,42 +31,51 @@
         </div>
     </header>
 
-    <hr>
+   <div class="slider">
 
-    <!-- Carrossel -->
-    <section>
-        <div class="slider">
+        <div class="slides">
             <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1" checked>
+            <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
             <input type="radio" name="radio-btn" id="radio4">
+            <!--FIM Radio Buttons-->
 
-            <!-- Área dos slides -->
-            <div class="sliders">
-                <div class="slide">
-                    <img src="img/LS2.jpg" alt="LS2">
-                </div>
-                <div class="slide">
-                    <img src="img/NORISK.jpg" alt="NORISK">
-                </div>
-                <div class="slide">
-                    <img src="img/PinhaoECoroa.jpg" alt="PinhaoECoroa">
-                </div>
-                <div class="slide">
-                    <img src="img/BMSfilters.jpg" alt="BMSfilters">
-                </div>
+            <!--Slide Images-->
+            <div class="slide first">
+                <img src="img/LS2.jpg" alt="LS2">
             </div>
+            <div class="slide">
+                <img src="img/NORISK.jpg" alt="NORISK">
+            </div>
+            <div class="slide">
+                <img src="img/PinhaoECoroa.jpg" alt="PinhaoECoroa" id="PinhaoECoroa">
+            </div>
+            <div class="slide">
+                <img src="img/BMSfilters.jpg" alt="BMSfilters" id="BMSfilters">
+            </div>
+            <!--FIM Slide Images-->
 
-            <!-- Navegação Manual -->
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+            <!--Navigation Auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
             </div>
         </div>
-    </section>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2"class="manual-btn"></label>
+            <label for="radio3"class="manual-btn"></label>
+            <label for="radio4"class="manual-btn"></label>
+        </div>
+
+
+   </div>
+
+    
 
     <!-- Rodapé -->
     <footer>
