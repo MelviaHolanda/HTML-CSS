@@ -2,17 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(75, 74, 74);
+    
 }
 
+/*CABEÇALHO*/
 
 .Cabeçalho{
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-   
-
-
+    background-color: rgb(75, 74, 74);
 }
 
 
@@ -33,7 +32,7 @@
 #home{
     padding-right: 70px;
     text-decoration: none;
-   
+
 }
 
 
@@ -75,6 +74,47 @@
     width: 800px;
 }
 
+/*FOOTHER*/
+
+#rodape {
+    background-color: rgb(33, 6, 6);
+    font-size: x-large;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+#logo_xmotos {
+    max-width: 350px; /* Ajusta o tamanho da logo */
+}
+
+#redes_sociais {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Espaço entre os elementos */
+    color: white;
+    flex-direction: row;
+}
+
+.icones_redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os ícones */
+    flex-wrap: wrap;
+}
+
+.icones_redes img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icones_redes img:hover {
+    transform: scale(1.1); 
+}
 
 
 
