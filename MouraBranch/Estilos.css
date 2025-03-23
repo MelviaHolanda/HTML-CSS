@@ -35,11 +35,149 @@
     font-weight: bold;
 }
 
-/* Botões */
+/* BOTÃO HOME */
+
+#home{
+font-size: 2rem;
+color: #ffffff;
+position: relative;
+display: inline-block;
+}
+
+#home::after,#home::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,#ff0000, #00ffff);
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease-out ;
+}
+
+#home::before{
+    top: -5px;
+    transform-origin: left;
+}
+
+#home:hover::after, 
+#home:hover::before{
+    transform: scaleX(1);
+}
+/*BOTÃO HOME FIM*/
+/*----------------------------------------------------------------------*/
+/*BOTÃO PEÇAS*/
+#pecas{
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    }
+    
+    #pecas::after,#pecas::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right,#ff0000, #00ffff);
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease-out ;
+    }
+    
+    #pecas::before{
+        top: -5px;
+        transform-origin: left;
+    }
+    
+    #pecas:hover::after, 
+    #pecas:hover::before{
+        transform: scaleX(1);
+    }
+/*BOTÃO PEÇAS FIM*/
+/*--------------------------------------------------------------------*/
+/*BOTÃO SERVIÇOS*/
+#servicos{
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    }
+    
+    #servicos::after,#servicos::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right,#ff0000, #00ffff);
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease-out ;
+    }
+    
+    #servicos::before{
+        top: -5px;
+        transform-origin: left;
+    }
+    
+    #servicos:hover::after, 
+    #servicos:hover::before{
+        transform: scaleX(1);
+    }
+/*BOTÃO SERVIÇOS FIM*/
+/*-----------------------------------------------------------------*/
+/*BOTÃO CONTATOS*/
+
+#contato{
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    }
+    
+    #contato::after,#contato::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right,#ff0000, #00ffff);
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease-out ;
+    }
+    
+    #contato::before{
+        top: -5px;
+        transform-origin: left;
+    }
+    
+    #contato:hover::after, 
+    #contato:hover::before{
+        transform: scaleX(1);
+    }
+
+/*BOTÃO CONTATOS FIM*/
+
 #entrar, #cadastrar {
     padding: 10px 20px;
     border-radius: 6px;
     font-size: 16px;
+}
+
+.cadastro button:hover{
+    transform: scale(1.1);
+}
+
+.cadastro button:not(:last-child){
+    margin-right: 30px;
 }
 
 #entrar {
@@ -60,6 +198,7 @@
 	width: 800px;
 	height: 400px;
 	overflow: hidden;
+    border-radius: 10px;
 }
 
 .slides{
