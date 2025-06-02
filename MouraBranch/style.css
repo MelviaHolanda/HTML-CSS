@@ -88,9 +88,14 @@ html {
 
     .mobile_menu {
         display: block;
+        background-color: #ffff;
+        
     }
 }
-
+.navbar-toggler {
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    
+}
 
 
 
