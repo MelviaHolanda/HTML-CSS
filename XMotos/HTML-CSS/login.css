@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Login */
+body {
+    background: #101026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+.form-container {
+    background: #1d1d2e;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+input {
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    border: 2px solid #f5f5f5;
+    outline: none;
+}
+
+.btn-xmotos {
+    font-size: 1.2rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.btn-xmotos::after,
+.btn-xmotos::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff0000, #00ffff);
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-out;
+}
+
+.btn-xmotos::after {
+    bottom: -5px;
+    transform-origin: right;
+}
+
+.btn-xmotos::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.btn-xmotos:hover::after,
+.btn-xmotos:hover::before {
+    transform: scaleX(1);
+
+}
+
+.create-account-message a:hover {
+    text-decoration: underline;
+}
+
+/*Cadastro*/
+body {
+    background: #101026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Logo */
+.logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 180px;
+}
+
+/* Container do formulário */
+.form-container {
+    background: #1d1d2e;
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow:
+        rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Títulos */
+h2 {
+    color: #f5f5f5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Inputs */
+input {
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    border: 2px solid #f5f5f5;
+    outline: none;
+}
+
+/* Botões personalizados */
+.btn-xmotos {
+    font-size: 1.2rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+.btn-xmotos::after,
+.btn-xmotos::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ff0000, #00ffff);
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-out;
+}
+
+.btn-xmotos::after {
+    bottom: -5px;
+    transform-origin: right;
+}
+
+.btn-xmotos::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.btn-xmotos:hover::after,
+.btn-xmotos:hover::before {
+    transform: scaleX(1);
+}
