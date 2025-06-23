@@ -1,4 +1,4 @@
-// Validação de CPF (não alterado, funciona como antes)
+// Validação de CPF 
 function validarCPF(cpf) {
     if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) return false;
 
@@ -24,7 +24,7 @@ function validarCPF(cpf) {
     return true;
 }
 
-// Validação de senha: Agora só exige mínimo de 8 caracteres
+// Validação de senha
 document.getElementById('senha').addEventListener('input', function () {
     const senha = this.value;
     this.setCustomValidity(""); // Limpa mensagens de validação anteriores
@@ -32,7 +32,6 @@ document.getElementById('senha').addEventListener('input', function () {
     if (senha.length < 8) {
         this.setCustomValidity("A senha deve ter no mínimo 8 caracteres.");
     }
-    // A linha que verificava caracteres especiais foi REMOVIDA daqui.
 });
 
 // Captura o evento de envio do formulário para fazer as validações finais
@@ -52,7 +51,6 @@ document.getElementById('cadastroForm').addEventListener('submit', function (e) 
     }
 
     // 2. Validação da Senha (comprimento mínimo de 8 caracteres)
-    // Embora o 'input' event listener já dê feedback, é crucial checar aqui no 'submit' também
     if (senhaInput.value.length < 8) {
         senhaInput.setCustomValidity("A senha deve ter no mínimo 8 caracteres.");
         senhaInput.reportValidity(); // Mostra a mensagem de erro da senha
