@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,10 +13,10 @@
 <body>
 
     <div class="logo">
-       <a href="principal_index.html"><img src="img/NovaLogo.png" alt="XMotos Logo">
-    </div></a> 
+        <a href="principal_index.html"><img src="img/NovaLogo.png" alt="XMotos Logo">
+    </div></a>
 
-        <section class="form-container">
+    <section class="form-container">
         <h2>Login</h2>
         <form id="loginForm">
             <input type="email" name="email" placeholder="Digite seu Email" required>
@@ -23,8 +24,31 @@
             <button type="submit" class="btn-xmotos">Entrar</button>
             <button type="button" class="btn-xmotos" onclick="window.location.href='cadastro.html'">Cadastrar</button>
         </form>
-        
+
     </section>
+    <script src="https://www.gstatic.com/firebasejs/11.9.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.9.1/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDfc97pi6U8ncyqrehYYkKuDL4ImZa4yAA",
+            authDomain: "site-xmotos.firebaseapp.com",
+            projectId: "site-xmotos",
+            storageBucket: "site-xmotos.firebasestorage.app",
+            messagingSenderId: "486573910087",
+            appId: "1:486573910087:web:078aa0ec21f4e4c0af6962",
+            measurementId: "G-SM81WC208X"
+        };
+        firebase.initializeApp(firebaseConfig);
+
+        console.log('antes');
+        firebase.auth().signInWithEmailAndPassword("matheusmoura@gmail.com","12345").then(responde =>{
+            console.log('success',responde)
+        }).catch(error => {
+            onsole.log('error',error)
+        });
+        console.log('depois')
+    </script>
 
 </body>
+
 </html>
